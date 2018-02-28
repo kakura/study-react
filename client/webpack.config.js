@@ -1,7 +1,8 @@
 // webpack.config.js
 module.exports = {
+  devtool: "cheap-module-source-map",
   entry: {
-    app: './src',
+    greet: './src/greet.jsx',
   },
 
   output: {
