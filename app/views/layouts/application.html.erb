@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ReactStudy</title>
-    <%= csrf_meta_tags %>
+
+<head>
+  <title>ReactStudy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
-    <%= yield %>
-  </body>
+</head>
+
+<body>
+  <header class="navbar bd-header">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/img_logo-top.png" width="100" alt="">
+    </a>
+    <button class="btn ml-3" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars" aria-hidden="true"></span>
+    </button>
+  </header>
+  <div clas="navbar navbar-light">
+    <div class="collapse navbar-collapse bd-sidebar" id="sidebar">
+      <a class="navbar-brand" href="#">Hidden brand</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <main id="main">
+      <%= yield %>
+  </main>
+  <footer id="footer">
+
+  </footer>
+</body>
+<%= javascript_include_tag 'webpack/greet', 'data-turbolinks-track': 'reload' %>
+
 </html>

@@ -1,0 +1,46 @@
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.d-flex {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.bd-header {
+  border-bottom: 2px solid rgba(0,0,0,.05);
+}
+
+.bd-sidebar {
+  border-bottom: 2px solid rgba(0,0,0,.05);
+}
+
+
+.bd-search {
+  padding: 1rem 15px;
+}
+
+.fa-bars {
+  font-size: 25px;
+}
+
+.items {
+  h3 {
+    text-align: center;
+  }
+  .col-lg {
+    margin-bottom: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .price {
+    text-align: right;
+  }
+  .farmer {
+    border-top: 2px solid rgba(0,0,0,.05);
+    padding-top: 15px;
+    font-size: 0.8rem;
+  }
+}
