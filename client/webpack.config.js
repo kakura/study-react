@@ -2,7 +2,7 @@
 module.exports = {
   devtool: "cheap-module-source-map",
   entry: {
-    greet: './src/greet.jsx',
+    index: './src/index.jsx',
   },
 
   output: {
@@ -17,6 +17,7 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           presets: ["es2015", "react"],
+          plugins: ['transform-decorators-legacy', 'transform-class-properties']
         }
       },
     ]
