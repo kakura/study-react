@@ -8,12 +8,16 @@ export default class ProductsStore {
 
   @observable items = [];
 
+  constructor() {
+    this.getData();
+  }
+
   @computed get getProducts() {
     return this.items;
   }
 
   @action.bound getData() {
-    axios.get('/api/index')
+    axios.get('/api/')
       .then((response) => {
         response.data.data.forEach(element => {
           console.log(element);

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { inject, observer } from 'mobx-react';
+import { Link } from 'react-router-dom'
 
 export default class Product extends React.Component {
 
@@ -18,7 +19,7 @@ export default class Product extends React.Component {
     }
     return (
       <div className="col-lg-4 product">
-        <a href="#">
+        <Link to={`/product/${item.id}`}>
           <div className="card">
             <img className="card-img-top" src="/assets/sample.jpeg" alt="Card image cap" />
             <div className="card-body">
@@ -47,7 +48,7 @@ export default class Product extends React.Component {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
 
     );

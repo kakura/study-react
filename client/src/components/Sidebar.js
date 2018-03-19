@@ -9,19 +9,18 @@ export default class Sidebar extends React.Component {
       <div className={`collapse navbar-collapse ${this.props.toggle}`} id="sidebar">
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
           <li className="nav-item active">
-            <Link to="/" className="nav-link">Home</Link>
-            <span className="sr-only">(current)</span>
+            <Link to="/" className="nav-link">設定</Link>
           </li>
           <li className="nav-item">
-            <Link to="/product" className="nav-link">Products</Link>
+            <Link to="/product" className="nav-link">レビュー</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">Disabled</a>
+            <Link to="/login" className="nav-link">ログイン</a>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
-          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input className="form-control mr-sm-2" type="search" placeholder="キーワード" aria-label="Search" />
+          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
         </form>
       </div>
     );

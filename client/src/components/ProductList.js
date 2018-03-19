@@ -7,7 +7,7 @@ const stores = {
   items: new ProductsStore(),
 };
 
-export default class Home extends React.Component {
+export default class ProductList extends React.Component {
 
   constructor() {
     super();
@@ -19,7 +19,7 @@ export default class Home extends React.Component {
   render() {
     return (
         <div className="container items">
-          <h3>これはサブサブタイトルだよ</h3>
+          <h3>これは商品検索一覧だよ</h3>
             <Provider {...stores}>
               <Products />
             </Provider>
