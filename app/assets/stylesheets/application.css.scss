@@ -36,3 +36,52 @@
     font-size: 0.8rem;
   }
 }
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  margin-top: 40px;
+  text-align: center!important;
+}
+
+.signup-btn{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: 9px center;
+}
+
+.btn_line {
+  max-width: 250px;
+  margin: 0 auto 15px;
+  a {
+    @extend .signup-btn;
+    background-color: #00c300;
+    background-image: url(/assets/icon-line.png);
+    background-size: 25px;
+  }
+}
+
+.btn_fb {
+  max-width: 250px;
+  margin: 0 auto 15px;
+  a {
+    @extend .signup-btn;
+    background-color: #385185;
+    background-image: url(/assets/icon-fb.png);
+    background-size: 20px;
+  }
+}
+
+.signin-email {
+  max-width: 250px;
+  margin: 15px auto 15px;
+  text-align: center!important;
+
+}

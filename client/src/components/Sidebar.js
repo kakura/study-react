@@ -15,7 +15,10 @@ export default class Sidebar extends React.Component {
             <Link to="/product" className="nav-link">レビュー</Link>
           </li>
           <li className="nav-item">
-            <Link to="/login" className="nav-link">ログイン</a>
+            <Link to="/member_regist" className="nav-link">会員登録</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/login" className="nav-link">ログイン</Link>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
